@@ -1,6 +1,5 @@
 using Microsoft.EntityFrameworkCore;
 using CarsWebAPI.Infrastructure.DataAccess;
-using Microsoft.EntityFrameworkCore.Design;
 using CarsWebAPI.Application.Services;
 using CarsWebAPI.Domain.Services;
 using CarsWebAPI.Domain.Repositories;
@@ -14,6 +13,8 @@ builder.Services.AddDbContext<CarsDbContext>(options =>
 
 builder.Services.AddScoped<ICarService, CarService>();
 builder.Services.AddScoped<ICarRepository, CarRepository>();
+builder.Services.AddScoped<IBuyerService, BuyerService>();
+builder.Services.AddScoped<IBuyerRepository, BuyerRepository>();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
