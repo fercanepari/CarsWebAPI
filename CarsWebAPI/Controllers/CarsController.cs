@@ -1,5 +1,4 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using CarsWebAPI.Application.Services;
 using CarsWebAPI.Domain.Entities;
 using CarsWebAPI.Domain.Services;
 
