@@ -23,7 +23,7 @@ Step 3: dotnet ef database update --project CarsWebAPI
 
 
 Project Structure:
-
+```
 CarsWebAPI/
 │
 ├── Domain/
@@ -57,3 +57,4 @@ CarsWebAPI/
 │   └── ...
 │
 └── CarsWebAPI.sln
+```
